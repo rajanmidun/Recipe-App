@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0; 
+  box-sizing: border-box; 
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: 'Playfair Display', serif;
+}
+
+header{
+  background-image: url('./images/background.jpg');
+  height: 100vh;
+  background-position:center;
+  background-size: cover;
+  text-align: center;
+}
+
+.heading-primary{
+  background-color: #fff;
+  display: inline-block;
+  margin: 10% auto;
+  width: 30%;
+  font-size: 5rem;
+  color: #65827D;
+  font-weight: 700;
+  opacity: .7;
+  text-align: center;
+  border-radius: .3rem;
+  box-shadow: 1rem 1rem .8rem .1rem #000;
+}
+
+.heading-primary span{
+  display: block;
+  color:#004E54
+}
+
+form{
+  position: relative;
+}
+
+form i{
+  position: absolute;
+  top: 1rem;
+}
+
+input[type=text]{
+  font-size: 16px;
+  width: 50%;
+  text-align: center;
+  outline: none;
+  border: none;
+  padding: .5rem;
+  border-radius: .7rem;
+  box-shadow: 0 1rem .8rem #000;
+} 
+
+/* ------------------- */
+/* FOR RECIPIE */
+/* ------------------- */
+
+.recipe-container{
+  margin-bottom: 3rem;
+  min-height: 40rem;
+}
+
+
+.heading-secondary{
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  margin: 2rem 0;
+}
+
+.recipe-img{
+  width: 100%;
+}
+
+.heading-tertiary{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:1000px){
+  html{
+    font-size: 50%;
+  }
+}
+
+@media (max-width:850px){
+  html{
+    font-size: 45%;
+  }
+}
+
+@media (max-width:766px){
+  html{
+    font-size: 40%;
+  }
+  form i{
+    top: .4rem;
+    font-size: .1rem;
+  }
+  .recipe-info{
+    width: 80%;
+    display: block;
+    margin: auto 10% ;
+  }
+}
+
+@media (max-width:678px){
+  html{
+    font-size: 35%;
+  }
+}
+
+
+@media (max-width:500px){
+  html{
+    font-size: 30%;
+  }
+
+  form i{
+    top: 1.7rem;
+    font-size: .1rem;
+  }
+  .heading-primary{
+    width: 90%;
+    margin: 45% auto;
+  }
+
+  form{
+    margin-top: -30%;
+  }
+
+  input[type=text]{
+    width: 75%;
+    padding:1rem
+  }
+
+  .recipe-info{
+    width: 100%;
+    margin: 0;
+    font-size: 2.4rem;
+  }
+
+  .heading-secondary{
+  font-size: 6rem;  
+  }
+
+  .heading-tertiary{
+    font-size: 3rem;
+  }
+}
