@@ -23,8 +23,8 @@ if (process.env.NODE_ENV !== 'production') {
   APP_KEY = process.env.REACT_APP_RECIPE_APP_KEY;
 }
 else {
-  APP_ID = process.env.REACT_APP_ID || process.env.REACT_APP_RECIPE_APP_ID;
-  APP_KEY = process.env.REACT_APP_KEY || process.env.REACT_APP_RECIPE_APP_KEY;
+  APP_ID = process.env.RECIPE_APP_ID;
+  APP_KEY = process.env.RECIPE_APP_KEY;
 }
 
 const RecipeState = props => {
